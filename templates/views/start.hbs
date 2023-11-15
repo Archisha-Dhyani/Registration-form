@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/public/css/style.css">
+</head>
+
+<body>
+  <h1>Welcome to Our Website!</h1>
+  <p>Choose an option to continue:</p>
+
+  <button id="loginButton">Login</button>
+  <button id="signupButton">Sign Up</button>
+
+  <script>
+    document.getElementById("loginButton").addEventListener("click", function() {
+      redirectTo('login');
+    });
+
+    document.getElementById("signupButton").addEventListener("click", function() {
+      redirectTo('register');
+    });
+
+    function redirectTo(destination) {
+      window.location.href = `/${destination}`;  // dealt by js 
+    }
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
