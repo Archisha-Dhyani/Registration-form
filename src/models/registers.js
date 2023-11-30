@@ -17,6 +17,9 @@ const employeeSchema = new mongoose.Schema({
     confirmPassword:{
         type:String,
         required:true
+    },
+    profilePicture: {
+        type: Buffer
     }
 
 })

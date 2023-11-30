@@ -13,7 +13,7 @@
 <body>
   {{> navbar}}
   <h1>Register</h1>
-  <form action="/register" method="post">
+  <form action="/register" method="post" enctype="multipart/form-data">
     <label for="name">Full Name:</label>
     <input type="text" id="name" name="name" required>
     <br>
@@ -26,7 +26,13 @@
     <label for="confirmPassword">Confirm Password:</label>
     <input type="password" id="confirmPassword" name="confirmPassword" required>
     <br>
+    
+    
+    <label for="profilePicture">Profile Picture:</label>
+    <input type="file" id="profilePicture" name="profilePicture">
+    <br>
     <button type="submit">Register</button>
+
   </form>
 <!-- Add Bootstrap JS dependencies -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
